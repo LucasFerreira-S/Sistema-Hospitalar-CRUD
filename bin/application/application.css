@@ -1,0 +1,39 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.TextField {
+	-fx-color:white;
+    -fx-border-color: #85C3FF;
+    -fx-background-color: #2a517a;
+  	-fx-border-radius:9.0px 9.0px 9.0px 9.0px;
+}
+.Pane{
+	-fx-border-radius:9.0px 9.0px 9.0px 9.0px;
+}
+.button {
+    
+    -fx-border-color: #85C3FF;
+    -fx-border-width: 2.0;
+    -fx-background-radius: 0.0;
+    -fx-background-color: #0085FF;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  
+}
+.button:hover {
+	
+    -fx-background-color: #85c3FF;
+}
+
+.button:pressed, .button:default:hover:pressed {
+   
+  -fx-background-color: white;
+  -fx-text-fill: cyan;
+}
+.buton:hover {
+	
+    -fx-background-color: #85c3FF;
+}
+
+.buton:pressed, .buton:default:hover:pressed {
+	 
+  -fx-background-color: white;
+  -fx-text-fill: white;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MenuController">
+   <children>
+      <Pane layoutY="-23.0" prefHeight="695.0" prefWidth="202.0" style="-fx-background-color: #162739;" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-23.0">
+         <children>
+            <ImageView fitHeight="88.0" fitWidth="67.0" layoutX="64.0" layoutY="242.0" onMouseClicked="#onMedicoAction">
+               <image>
+                  <Image url="@../../img/Medico-icon.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="88.0" fitWidth="67.0" layoutX="64.0" layoutY="74.0" onMouseClicked="#onPacienteAction">
+               <image>
+                  <Image url="@../../img/Paciente-icon.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="88.0" fitWidth="67.0" layoutX="64.0" layoutY="408.0" onMouseClicked="#onConsultaAction">
+               <image>
+                  <Image url="@../../img/Consulta-icon.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="200.0" layoutY="-15.0" prefHeight="516.0" prefWidth="12.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="-8.0" AnchorPane.topAnchor="-15.0" />
+      <ImageView fitHeight="671.0" fitWidth="690.0" layoutX="212.0" layoutY="-3.0" AnchorPane.leftAnchor="212.0" AnchorPane.rightAnchor="-2.0">
+         <image>
+            <Image url="@../../img/Hospital-Fundo.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur radius="5.2" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="265.0" fitWidth="271.0" layoutX="421.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="421.0" AnchorPane.rightAnchor="214.0">
+         <image>
+            <Image url="@../../img/HeartBeat-Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

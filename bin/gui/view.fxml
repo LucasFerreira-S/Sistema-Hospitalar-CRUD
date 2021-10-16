@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
+   <left>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="742.0" layoutX="-374.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-374.0" AnchorPane.rightAnchor="0.3236083984375" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../../img/Hospital-Fundo.jpg" />
+               </image>
+               <effect>
+                  <BoxBlur />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="176.0" fitWidth="168.0" layoutX="97.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="166.0" AnchorPane.topAnchor="166.0">
+               <image>
+                  <Image url="@../../img/HeartBeat-Logo.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane maxHeight="900.0" maxWidth="900.0" prefHeight="489.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtNome" layoutX="111.0" layoutY="220.0" promptText="Nome" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="79.0" />
+            <PasswordField fx:id="psdCpf" layoutX="112.0" layoutY="261.0" promptText="CPF" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="78.0" />
+            <Button fx:id="btTest" layoutX="140.0" layoutY="337.0" mnemonicParsing="false" onAction="#onbtTestAction" prefHeight="29.0" prefWidth="75.0" style="-fx-background-color: #0598ff;" styleClass="buton" stylesheets="@../application/application.css" text="Entrar" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label layoutX="150.0" layoutY="114.0" text="Login" textFill="#0598ff">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="63.0" fitWidth="59.0" layoutX="148.0" layoutY="67.0">
+               <image>
+                  <Image url="@../../img/users-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="25.0" layoutX="80.0" layoutY="228.0">
+               <image>
+                  <Image url="@../../img/User-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="78.0" layoutY="265.0">
+               <image>
+                  <Image url="@../../img/Key-CPF-icon.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </right>
+</BorderPane>
